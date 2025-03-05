@@ -1,0 +1,19 @@
+// writing to a txt file // 
+fstream file;
+file.open("output.txt", ios::out); // ios::out -> create file |||| ios::app -> add to previously open file |||| ios::in -> read // 
+if(file.is_open())
+{
+    file << "This class fucking sucks\n";
+    file.close(); 
+}
+
+// reading from a txt file // 
+file.open("output.txt", ios::in);
+if(file.is_open())
+{
+    string line;
+    while (getline(file,line))
+    {
+        //store line somewhere for later processing // 
+    }
+}
